@@ -1,17 +1,22 @@
 <DOCTYPE html>
     <html>
     <head>
-    <title>Nick's Simple Interest Calculator</title>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <div class="maindiv">
+<div class="maindiv">
     <h1>Simple Interest Calculator</h1>
-    
-    Amount <input type="number" id="principal" onfocus="validateAmount()"> <br/>
-    Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="default_val" onchange="updateRate()"><span id="rate_val">10.25%</span><br/>
-    No. of Years <select id="years">
+    <div class="row">
+    <div class="column">Amount</div><div class="column"> <input type="number" id="principal" onfocus="validateAmount()"> </div>
+    </div>
+    <div class="row">
+    <div class="column">Rate</div> <div class="column"><input type="range" id="rate" min="1" max="20" step="0.25" value="default_val" onchange="updateRate()"><span id="rate_val">10.25%</span></div>
+    </div>
+    <div class="row">
+    <div class="column">
+    No. of Years </div><div class="column"><select id="years">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -23,12 +28,14 @@
     <option value="9">9</option>
     <option value="10">10</option>
     </select>
-    <br/></br>
-    
+    </div></div></br>
     <button onclick="compute()">Compute Interest</button>
     <p id="result"></p>
+</div>
+</div>
     </body>
 </br>
-    <footer>This Calculator belongs to Nick Patel
+    <footer>This Calculator belongs to Nick Patel</br>
+        Ⓒ Everyone Can Get Rich
     </footer>
     </html>
